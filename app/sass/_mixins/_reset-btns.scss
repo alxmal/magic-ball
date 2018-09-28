@@ -1,0 +1,29 @@
+@mixin reset-button() {
+	background: none;
+	border: 0;
+	line-height: normal;
+	overflow: visible;
+	padding: 0;
+	text-align: left;
+
+	&:focus, &:active {
+		outline: none;
+	}
+}
+
+@mixin reset-link() {
+	color: inherit;
+	text-decoration: inherit;
+
+	&:hover, &:focus, &:active {
+		color: inherit;
+		text-decoration: inherit;
+	}
+}
+
+@mixin reset-list() {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
