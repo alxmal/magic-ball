@@ -37,9 +37,10 @@ gulp.task('js', ['common-js'], function() {
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		server: {
-			baseDir: 'src'
-		},
+		// server: {
+		// 	baseDir: 'src'
+		// },
+		proxy: "localhost:8888",
 		notify: false
 		// tunnel: true,
 		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
